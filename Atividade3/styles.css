@@ -1,0 +1,341 @@
+/* atencao nao esta responsivo */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+/* Reset básico */
+/* todo o documento 
+essa regra garante que todos os elementos da página comecem com as margens e preenchimentos zerados
+(os navegadores podem ter seus valores internos) e
+ com o modelo de caixa previsível, 
+ o que proporciona uma base consistente para
+ começar a estilizar a página e
+  evita inconsistências entre diferentes 
+  navegadores. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elemento raiz no caso html */
+:root {
+    --corprincipal: #7f8fb1;
+}
+
+/* comportamento do scroll é feito
+de maneira suave por ex. quando vai
+para uma outra parte da mesma */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: var(--corprincipal);
+}
+
+/* Header e Navegação */
+.header-1 {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    /* nao muda com o scroll */
+    width: 100%;
+    /* A propriedade top só tem efeito 
+    quando o elemento está posicionado com position
+    cabeçalho ficará fixo no topo da página, 
+    e o valor top: 0; “cola” ele exatamente na borda
+     superior da janela (sem nenhum espaço).
+    Se fosse top: 10px;, por exemplo, o header
+     ficaria 10 pixels abaixo do topo da tela.
+     */
+    top: 0;
+}
+
+.nav {
+    width: 960px;
+    margin: 0 auto;
+    /*qualquer conteúdo que "extrapole" as bordas do elemento 
+    é simplesmente recortado e escondido */
+    overflow: hidden;
+}
+
+.nav-logo {
+    color: var(--corprincipal);
+    text-decoration: none;
+    /* tira sublinhado  links */
+    font-weight: bold;
+    /* espessura dos caracteres */
+    font-size: 20px;
+    float: left;
+    /* flutua um elemento */
+    padding: 5px 0;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+    /* remover marcador */
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: var(--corprincipal);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #906ce4;
+    background-color: #555;
+    border-radius: 3px;
+}
+
+/* Seções gerais */
+section {
+    padding: 80px 0;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #8257E5;
+}
+
+/* Home Section */
+.introducao {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.introducao-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.introducao-data {
+    float: left;
+}
+
+.introducao-title-color {
+    color: #8257E5;
+}
+
+.introducao-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8257E5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.conceito {
+    text-align: center;
+}
+
+.conceito-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.conceito-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* Formation Section */
+.tipos {
+    text-align: center;
+}
+
+.tipos-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* pweb noite 27/08 */
+.tipos-container h3 {
+    margin-bottom: 10px;
+}
+
+.tipos-container p,
+.tipos-container ol {
+    margin-bottom: 20px;
+}
+
+.tipos-container ol {
+    padding-left: 40px;
+}
+
+.tipos-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.ferramentas {
+    text-align: center;
+}
+
+.ferramentas-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* pweb noite 27/08 */
+.ferramentas-container h3 {
+    margin-bottom: 10px;
+}
+
+.ferramentas-container p,
+.ferramentas-container ol {
+    margin-bottom: 20px;
+}
+
+.ferramentas-container ol {
+    padding-left: 40px;
+}
+
+.ferramentas-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.exemplos {
+    text-align: center;
+}
+
+.exemplos-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* pweb noite 27/08 */
+.exemplos-container h3 {
+    margin-bottom: 10px;
+}
+
+.exemplos-container p,
+.exemplos-container ol {
+    margin-bottom: 20px;
+}
+
+.exemplos-container ol {
+    padding-left: 40px;
+}
+
+.exemplos-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.conclusao {
+    text-align: center;
+}
+
+.conclusao-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* pweb noite 27/08 */
+.conclusao-container h3 {
+    margin-bottom: 10px;
+}
+
+.conclusao-container p,
+.conclusao-container ol {
+    margin-bottom: 20px;
+}
+
+.conclusao-container ol {
+    padding-left: 40px;
+}
+
+.conclusao-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.bibliografia {
+    text-align: center;
+}
+
+.bibliografia-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* pweb noite 27/08 */
+.bibliografia-container h3 {
+    margin-bottom: 10px;
+}
+
+.bibliografia-container p,
+.bibliografia-container ol {
+    margin-bottom: 20px;
+}
+
+.bibliografia-container ol {
+    padding-left: 40px;
+}
+
+.bibliografia-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+#footer-title {
+    color: #e58d57;
+}
+
+.bd-grid {}
+

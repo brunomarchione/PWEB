@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- navegador usará a largura total dispositivo e
+      página será exibida sem zoom,
+      no seu tamanho real -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="APIs e integrações">
+    <meta name="description" content="APIs e integrações  conceitos, tipos, ferramentas, exemplos.">
+    <meta name="keywords" content="APIs, integrações">
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>APIs e integrações  conceitos, tipos, ferramentas, exemplos.</title>
+</head>
+
+<body>
+
+
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#introducao" class="nav-logo">APIs e integrações – conceitos, tipos, ferramentas, exemplos.</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#introducao" class="nav-link active">Introdução</a></li>
+                    <li class="nav-item"><a href="#conceito" class="nav-link">Conceitos</a></li>
+                    <li class="nav-item"><a href="#tipos" class="nav-link">Tipos</a></li>
+                    <li class="nav-item"><a href="#ferramentas de testes" class="nav-link">Ferramentas de Testes</a>
+                    <li class="nav-item"><a href="#exemplos" class="nav-link">Exemplos</a></li>
+                    <li class="nav-item"><a href="#conclusao" class="nav-link">Conclusão</a></li>
+                    <li class="nav-item"><a href="#bibliografia" class="nav-link">Bibliografia</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao bd-grid" id="introducao">
+            <div class="introducao-data">
+                <h1 class="introducao-title"><br>APIs e integrações<span class="introducao-title-color"> - conceitos, tipos, ferramentas, exemplos.</span><br></h1>
+                    <p class="introducao-text">
+                        Para um profissional de TI, é de grande importância entender como funciona uma API, 
+                        tanto para utilizar uma já existente, como para criar a sua própria, sendo ela disponível para todos 
+                        ou usada internamente dentro de uma empresa.
+                    </p>
+                    <p class="introducao-text">
+                        Essa ferramenta é muito utilizada para validar dados ou buscar informações de algo que já é conhecido, 
+                        para que quem desenvolve um novo software não precise criar um algoritmo, por exemplo. Para isso é 
+                        importante sabermos sobre os conceitos que vamos ver a seguir.
+                    </p>
+                <a href="#bibliografia" class="button">Bibliografia</a>
+            </div>
+        </section>
+
+
+        <section class="conceito section" id="conceito">
+            <h2 class="section-title">Conceitos</h2>
+
+            <div class="conceito-container bd-grid">
+
+                <div>
+                    <p class="conceito-text">
+                        API, ou Application Programming Interface, é um conjunto de definições e protocolos 
+                        que permite a integração entre diferentes softwares, facilitando a comunicação entre eles. 
+                    </p>
+                    <p class="conceito-text">
+                        Em termos simples, uma API é como uma ponte que conecta diferentes sistemas, possibilitando 
+                        que eles “conversem” entre si, troquem dados e realizem operações em conjunto.
+                    </p>
+                    <p class="conceito-text">
+                        Imagine, por exemplo, um aplicativo de viagens que precise buscar informações sobre voos em tempo real.
+                    </p>
+                    <p class="conceito-text">
+                        Em vez de construir toda a infraestrutura necessária para acessar diretamente os sistemas de companhias 
+                        aéreas, o aplicativo pode usar uma que já está disponível. 
+                    </p>
+                    <p class="conceito-text">
+                        Essa API fornecerá os dados necessários, como horários de voos, preços e disponibilidade - tudo isso de forma segura e padronizada.
+                    </p>
+                    <p class="conceito-text">
+                        Vale dizer que os diferentes tipos podem ser fundamentais em diversos contextos: integração de plataformas de e-commerce com sistemas de 
+                        pagamento, na conexão de dispositivos IoT com aplicações na nuvem, ou na automação de processos internos em empresas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tipos section" id="tipos">
+            <h2 class="section-title">Tipos de APIs</h2>
+            <div class="tipos-container bd-grid">
+                    <p class="tipos-text">
+                        Para escolher a API para uma empresa, é preciso primeiro entender os diferentes tipos de protocolos que 
+                        elas podem utilizar. A seguir, temos alguns exemplos.
+                    </p>
+                <h3><u>RESTful</u></h3>
+                    <p class="tipos-text">
+                        APIs RESTful (Representational State Transfer) são um dos tipos de API amplamente utilizados devido à sua simplicidade e flexibilidade.
+                    </p>
+                    <p class="tipos-text">
+                        Baseadas em protocolos HTTP, elas permitem que sistemas interajam usando métodos padrão como GET, POST, PUT e DELETE.
+                    </p>
+                    <p class="tipos-text">
+                        Uma das grandes vantagens é a sua escalabilidade e a capacidade de trabalhar com diferentes formatos de dados, como JSON e XML.
+                    </p>
+                <h3><u>Web</u></h3>
+                    <p class="tipos-text">
+                        APIs Web, ou Web Services, são projetadas para suportar a interação entre diferentes sistemas na web. Elas utilizam protocolos como 
+                        HTTP ou HTTPS para permitir que os sistemas compartilhem dados ou funcionalidades.
+                    </p>
+                    <p class="tipos-text">
+                        Uma API Web pode ser baseada em diferentes estilos arquiteturais, incluindo RESTful ou SOAP, e é frequentemente utilizada em aplicações 
+                        que requerem uma interação direta com o usuário final por meio de navegadores web.
+                    </p>
+                <h3><u>SOAP</u></h3>
+                    <p class="tipos-text">
+                        Os tipos de API SOAP (Simple Object Access Protocol) são protocolos que seguem um padrão rígido de comunicação, utilizando XML para enviar e receber mensagens.
+                    </p>
+                    <p class="tipos-text">
+                        Ao contrário das APIs RESTful, que são mais flexíveis, as SOAP são conhecidas por sua robustez e segurança, sendo amplamente usadas em ambientes 
+                        empresariais onde a integridade dos dados é crítica.
+                    </p>
+                    <p class="tipos-text">
+                        SOAP é ideal para operações que exigem transações complexas e um alto nível de segurança, como sistemas bancários ou de saúde.
+                    </p>
+                <h3><u>Plataforma</u></h3>
+                    <p class="tipos-text">
+                        APIs de plataforma permitem que desenvolvedores criem aplicações ou serviços que interajam diretamente com uma plataforma específica, como o Google Maps, Facebook ou Twitter.
+                    </p>
+                    <p class="tipos-text">
+                        Essas aplicações fornecem acesso a funcionalidades internas dessas plataformas, permitindo que os desenvolvedores integrem suas próprias aplicações com serviços populares.
+                    </p>
+                    <p class="tipos-text">
+                        Elas também são essenciais para expandir o alcance das aplicações, adicionando valor por meio da integração com ecossistemas estabelecidos.
+                    </p>
+                <h3><u>Hardware</u></h3>
+                    <p class="tipos-text">
+                        Os tipos de APIs de hardware permitem a comunicação direta entre softwares e dispositivos físicos.
+                    </p>
+                    <p class="tipos-text">
+                        Essas APIs são fundamentais em cenários onde a interação com dispositivos específicos é necessária, como em sistemas de automação industrial, IoT (Internet das Coisas) ou dispositivos médicos.
+                    </p>
+                    <p class="tipos-text">
+                        Elas possibilitam que um software controle ou monitore o hardware de forma eficiente, garantindo uma integração perfeita entre os componentes físicos e os sistemas digitais.
+                    </p>
+            </div>
+        </section>
+
+        <section class="ferramentas section" id="ferramentas de testes">
+            <h2 class="section-title">FERRAMENTAS DE TESTES</h2>
+            <div class="ferramenta-container bd-grid">
+                    <p class="ferramentas-text">
+                        Ferramentas de teste de API são plataformas especializadas que permitem que desenvolvedores e testadores criem, 
+                        executem e automatizem testes para garantir que as APIs funcionem conforme o esperado. Essas ferramentas podem 
+                        testar diversos aspectos de uma API, incluindo funcionalidade, confiabilidade, desempenho e segurança.
+                    </p>
+                    <p class="ferramentas-text">
+                        Alguns recursos de ferramentas avançadas de teste de API incluem suporte para scripts, testes em vários ambientes 
+                        e integração de pipeline de CI/CD.
+                    </p>
+                    <p class="ferramentas-text">
+                        Uma ferramenta de teste de API gratuita/de código aberto geralmente fornece funcionalidades essenciais, como simulação 
+                        de solicitações, execução automatizada de testes e relatórios em tempo real, tornando-as ideais para equipes pequenas ou organizações com orçamento limitado.
+                    </p>
+                    <p class="ferramentas-text">
+                        Existem vários tipos de testes de API:
+                    </p>
+                <h3><u>Teste funcional</u></h3>
+                    <p class="ferramentas-text">
+                        Valida a resposta da API em relação às saídas esperadas.
+                    </p>
+                <h3><u>Teste de carga</u></h3>
+                    <p class="ferramentas-text">
+                        Simula ambientes de alto tráfego para testar o desempenho da API sob estresse.
+                    </p>
+                <h3><u>Teste de segurança</u></h3>
+                    <p class="ferramentas-text">
+                        Garante que a API esteja protegida contra vulnerabilidades comuns, como injeção de SQL ou cross-site scripting (XSS).
+                    </p>
+                <h3><u>Teste de integração</u></h3>
+                    <p class="ferramentas-text">
+                        Confirma se as APIs se integram corretamente com outros sistemas.
+                    </p>
+            </div>
+        </section>
+<section class="exemplos section" id="exemplos">
+            <h2 class="section-title">EXEMPLOS</h2>
+            <div class="exemplos-container bd-grid">
+                    <p class="exemplos-text">
+                        As APIs desempenham um papel crucial como a espinha dorsal nos bastidores, facilitando o compartilhamento 
+                        fluido de dados e funcionalidades através de uma gama de sistemas de software. Ao navegar pelo seus feeds 
+                        em redes sociais, conferir a previsão do tempo ou encontrar sua localização em um mapa, provavelmente você 
+                        está se beneficiando de APIs sem perceber. 
+                    </p>
+                <h3><u>Redes sociais</u></h3>
+                    <p class="exemplos-text">
+                        Essas plataformas servem como um playground virtual, para que indivíduos e empresas se conectem e interajam com o 
+                        mundo. Entretanto, nos bastidores, uma rede complexa de APIs impulsiona sua experiência em redes sociais.
+                    </p>
+                <h3><u>Autenticação</u></h3>
+                    <p class="exemplos-text">
+                        Quando você loga em uma rede social, uma API cuida da autenticação ao transmitir e verificar seus dados de forma 
+                        segura, garantindo a integridade e a segurança de suas interações online. Métodos de autenticação, incluem chaves 
+                        de API, OAuth para tokens de acesso após o consentimento do usuário e, em alguns casos, autenticação básica menos 
+                        segura com um username e senha.
+                    </p>
+                <h3><u>Compartilhamento de conteúdo</u></h3>
+                    <p class="exemplos-text">
+                        Quando você atualiza seu status, sobe uma foto ou compartilha um vídeo, o botão “Compartilhar” aciona uma API que transmite, 
+                        de forma fluida, seu conteúdo para os servidores da plataforma. Esse processo permite que seus amigos e seguidores 
+                        acessem e visualizem o que você compartilhou. Isso ilustra como as APIs, de forma discreta, facilitam a troca de 
+                        conteúdo e interações nas redes sociais.
+                    </p>
+                <h3><u>Logins sociais</u></h3>
+                    <p class="exemplos-text">
+                        Já reparou que você pode utilizar sua conta do Google ou Facebook para fazer o login em diversos sites? Essa 
+                        conveniência é possibilitada pelas APIs. Sites integram essas APIs para facilitar a autenticação de usuários 
+                        através de plataformas de redes sociais. Isso significa que, com apenas poucos cliques, usuários podem acessar 
+                        serviços e conteúdo em diferentes sites, otimizando o processo de login e a conveniência ao usuário.
+                    </p>
+                <h3><u>Previsão do tempo</u></h3>
+                    <p class="exemplos-text">
+                        Essa é uma ciência intrincada que depende de vários conjuntos de dados e modelagem avançada. APIs atuam como 
+                        um elo vital, que conectam e expõem esses conjuntos, garantindo que essa informação valiosa sobre o tempo 
+                        se torne acessível a um público amplo.
+                    </p>
+            </div>
+        </section>
+        <section class="conclusao section" id="conclusao">
+            <h2 class="section-title">CONCLUSÃO</h2>
+            <div class="conclusao-container bd-grid">
+                    <p class="conclusao-text">
+                        As APIs possuem grande importância na internet atualmente, possibilitando a conexão 
+                        de vários serviços em um único lugar, como nas redes sociais, por exemplo. Para a 
+                        velocidade de informação atualmente, as APIs são uma ferramenta ideal para a comunicação.
+                    </p>
+                    <p class="conclusao-text">
+                        Para serviços internos, elas também são uteis nas chamadas de ferramentas de setores distintos 
+                        dentro de uma mesma empresa, para que sejam enviadas informações importantes, como documentos entres setores por exemplo.
+                    </p>
+                    <p class="conclusao-text">
+                        AO mundo das APIs está no lado oculto da tecnologia, trabalhando para que o sistema integrado de internet 
+                        funcione sem que o usuário perceba o seu funcionamento.
+                    </p>
+            </div>
+        </section>  
+        <section class="bibliografia section" id="bibliografia">
+            <h2 class="section-title">BIBLIOGRAFIA</h2>
+            <div class="bibliografia-container bd-grid">
+                    <p class="bibliografia-text">
+                        TOTVS, Equipe. Os diferentes tipos de API e seus usos na gestão de documentos. 2024. Disponível em: <https://www.totvs.com/blog/gestao-para-assinatura-de-documentos/tipos-de-api/> Acesso em: agosto 2025.
+                    </p>
+                    <p class="bibliografia-text">
+                        BrowserStack. As 15 principais ferramentas de teste de API (ferramentas de teste de API gratuitas/de código aberto incluídas). 2025. Disponível em: < https://www.browserstack.com/guide/open-source-api-testing-tools> Acesso em: agosto 2025.
+                    </p>
+                    <p class="bibliografia-text">
+                       BrowserStack. Exemplos de aplicação de APIs no dia a dia (redes sociais, previsão do tempo, geolocalização). 2025. Disponível em: < https://www.sensedia.com.br/pillar/exemplos-de-aplicacao-de-apis-no-dia-a-dia-redes-sociais-previsao-do-tempo-geolocalizacao> Acesso em: agosto 2025.
+                    </p>
+            </div>
+        </section>         
+    </main>
+    <footer>
+        <p id="footer-title"> &nbsp; Criado na aula </p>
+        <p> &ensp; Programação Web</p>
+        <p> &emsp; 03/09/2025 </p>
+        <p><small>&copy; <sup>2025</sup> <sub>Bruno Marchione</sub>
+                Todos os direitos reservados. </small></p>
+    </footer>
+
+</body>
+
+</html>
