@@ -1,0 +1,130 @@
+body {
+    font-family: "Segoe UI", Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.head {
+    flex-basis: calc(100% - 20px);
+    background-color: HSL(221, 42%, 43%);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(125, 6, 6, 0.2), 5px 5px 10px 5px #187b8d;
+    height: 100px;
+}
+
+.card {
+    flex-basis: calc(100% / 3 - 20px);
+    background-color: HSL(221, 42%, 43%);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(125, 6, 6, 0.2), 5px 5px 10px 5px #187b8d;
+    height: 210px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p{
+    margin-top: 10px 0;
+}
+
+.head h2 {
+    margin-top: 0;
+}
+
+.head p{
+    margin-top: 10px 0;
+}
+
+.container-box{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-areas: 
+    'a b c d'
+    'a b c d'
+    'a b f f'
+    'a e f f';
+}
+
+.box{
+    background-color: #FF8C00;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px rgba(125, 6, 6, 0.2), 5px 5px 10px 5px #c38c49;
+    padding: 20px;
+    overflow: hidden;         /* Esconde conteúdo que ultrapassa */
+    text-overflow: ellipsis;  /* Adiciona "..." se o texto for cortado */
+    white-space: normal;      /* Permite quebra de linha */
+    word-wrap: break-word;
+    font-size: clamp(2px, 1vw, 22px);
+    line-height: 1.4;
+
+}
+
+.invisible{
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px rgba(125, 6, 6, 0.2), 5px 5px 10px 5px #f9f9f9;
+    padding: 20px;
+    overflow: hidden;         /* Esconde conteúdo que ultrapassa */
+    text-overflow: ellipsis;  /* Adiciona "..." se o texto for cortado */
+    white-space: normal;      /* Permite quebra de linha */
+    word-wrap: break-word;
+    font-size: clamp(2px, 1vw, 22px);
+    line-height: 1.4;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+.box p{
+    margin-top: 10px 0;
+}
