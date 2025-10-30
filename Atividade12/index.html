@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12 - PWEB NOITE</title>
+</head>
+<body>
+    <script>
+
+        function Retangulo(x, y) {
+            this.base = x;
+            this.altura = y;
+            this.calcArea = function() {
+                return x * y;
+            }
+        }
+
+        var ret1 = new Retangulo(10, 20);
+        alert("A área do retangulo é: " + ret1.calcArea());
+
+
+        class  Conta {
+            constructor() {
+                this._nomeCliente;
+                this._banco;
+                this._numConta;
+                this._saldo;
+            }
+            setNomeCliente(value) {
+                this._nomeCliente = value;
+            }
+            getNomeCliente() {
+                return this._nomeCliente;
+            }
+            setBanco(value) {
+                this._banco = value;
+            }
+            getBanco() {
+                return this._banco;
+            }
+            setNumConta(value) {
+                this._numConta = value;
+            }
+            getNumConta() {
+                return this._numConta;
+            }
+            setSaldo(value) {
+                this._saldo = value;
+            }
+            getSaldo() {
+                return this._saldo;
+            }
+        }
+
+        class ContaCorrente extends Conta {
+            constructor() {
+                super();
+                this._saldoEspecial;
+            }
+            setSaldoEspecial(value) {
+                this._saldoEspecial = value;
+            }
+            getSaldoEspecial() {
+                return this._saldoEspecial;
+            }
+        }
+
+        class ContaPoupanca extends Conta {
+            constructor() {
+                super();
+                this._juros;
+                this._dtVencimento;
+            }
+            setJuros(value) {
+                this._juros = value;
+            }
+            getJuros() {
+                return this._juros;
+            }
+            setDtVencimento(value) {
+                this._dtVencimento = value;
+            }
+            getDtVencimento() {
+                return this._dtVencimento;
+            }
+        }
+
+        var objCorrente = new ContaCorrente();
+        objCorrente.setNomeCliente("Bruno Marchione");
+        objCorrente.setBanco("Banco do Brasil");
+        objCorrente.setNumConta("12345-6");
+        objCorrente.setSaldo(1000);
+        objCorrente.setSaldoEspecial(500);
+        alert("Objeto Conta Corrente: \nNome Correntista: " + objCorrente.getNomeCliente() + 
+              "\nBanco: " + objCorrente.getBanco() + 
+              "\nNúmero da Conta: " + objCorrente.getNumConta() + 
+              "\nSaldo: " + objCorrente.getSaldo() + 
+              "\nSaldo Especial: " + objCorrente.getSaldoEspecial());
+
+        var objPoupanca = new ContaPoupanca();
+        objPoupanca.setNomeCliente("Bruno Marchione");
+        objPoupanca.setBanco("Caixa Econômica");
+        objPoupanca.setNumConta("65432-1");
+        objPoupanca.setSaldo(2000);
+        objPoupanca.setJuros(0.05);
+        objPoupanca.setDtVencimento("2025-10-29");
+        alert("Objeto Conta Poupança: \nNome Correntista: " + objPoupanca.getNomeCliente() + 
+              "\nBanco: " + objPoupanca.getBanco() + 
+              "\nNúmero da Conta: " + objPoupanca.getNumConta() + 
+              "\nSaldo: " + objPoupanca.getSaldo() + 
+              "\nJuros: " + objPoupanca.getJuros() + 
+              "\nData de Vencimento: " + objPoupanca.getDtVencimento());
+    </script>
+</body>
+</html>
